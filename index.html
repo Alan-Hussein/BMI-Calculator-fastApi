@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form id="bmi-form">
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Height (m):</label>
+                <input type="number" id="height" name="height" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age (years):</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <button type="submit">Calculate BMI</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Your BMI Result</h2>
+            <p><strong>BMI:</strong> <span id="bmi-value"></span></p>
+            <p><strong>Category:</strong> <span id="bmi-category"></span></p>
+            <p><strong>Advice:</strong> <span id="bmi-advice"></span></p>
+            <p><strong>Ideal Weight:</strong> <span id="ideal-weight"></span> kg</p>
+            <p><strong>Weight Status:</strong> <span id="weight-status"></span></p>
+        </div>
+        <div class="bmi-meter">
+            <div class="range">
+                <span class="label">Underweight</span>
+                <span class="label">Normal</span>
+                <span class="label">Overweight</span>
+                <span class="label">Obesity</span>
+            </div>
+            <div class="indicator"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

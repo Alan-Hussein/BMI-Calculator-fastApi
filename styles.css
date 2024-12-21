@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    background: linear-gradient(to right, #ff6f6f, #ffcc33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none; /* Remove text shadow for gradients */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .bmi-meter {
+    margin-top: 20px;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(to right, #85d7ff, #98fb98, #f9d76e, #ff6f6f);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .bmi-meter .range {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+  }
+  
+  .bmi-meter .label {
+    font-size: 12px;
+    color: #333;
+  }
+  
+  .bmi-meter .indicator {
+    position: absolute;
+    height: 30px;
+    width: 5px;
+    background-color: #000;
+    top: 0;
+    border-radius: 5px;
+  }
+  
