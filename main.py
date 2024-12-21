@@ -31,7 +31,7 @@ class BMIResponse(BaseModel):
 def home():
     return "Welcome to the enhanced BMI Calculator"
 
-@app.post("/calculate-bmi", response_model=BMIResponse, tags=["BMI Calculator"])
+@app.post("/api/calculate-bmi", response_model=BMIResponse, tags=["BMI Calculator"])
 def calculate_bmi(data: BMIRequest):
     """
     Calculate BMI based on weight (kg), height (m), age, and gender.
